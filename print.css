@@ -1,0 +1,37 @@
+@media print{
+    body{
+        margin: 80px;
+    }
+
+    section#accroche{
+         background-image: none;
+    }
+
+    section#contenu img{
+         width: 100px;
+    }
+
+    section#contenu figcaption, section#contenu h2{
+        color: black;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header{
+        display:block; 
+               }
+        
+        section#produits{
+              display: inline-block;
+          }
+        
+        section#contenu article figure{
+              display: block;
+        }
+/*****Enlever les images de l'impression*****/
+    div#galerie img{
+        display: none;
+    }
+}

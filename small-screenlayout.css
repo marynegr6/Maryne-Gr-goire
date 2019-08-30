@@ -1,0 +1,22 @@
+@media screen and (max-width: 650px) {
+     body{
+     text-align:center;
+     }
+
+     header{
+    display:block; 
+           }
+    
+    section#produits{
+          display: block;
+      }
+    
+    section#contenu article figure{
+          display: block;
+    }
+
+    ul#galerie li img{
+          display:block;
+    }
+
+             }

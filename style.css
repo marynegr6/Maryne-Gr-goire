@@ -1,0 +1,187 @@
+*{
+  box-sizing: border-box;
+}
+
+
+/*****Header*****/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+}
+
+header img{
+     width: 100px;
+     height: auto;
+
+}
+
+header p{
+    text-indent:-9999px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav li a{
+    color:lightblue;
+    text-decoration: none;
+}
+
+
+/*****Accroche*****/
+
+section#accroche{
+    width: 85%;
+    padding:200px 150px; /*Ne pas utiliser height sauf dans de rare cas sinon ca casse le block!*/
+    margin: auto;
+    text-align:center;
+    background-color: azure; /*Appliquer la couleur avant comme ca si l'image ne charge pas la couelur reste*/
+    background-image: url("img/03.jpg");
+    background-size: cover;
+    color: #c0aa94;    
+}
+
+section#accroche a{
+    color:#c0aa94;
+    background-color:azure;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: 20px;
+    padding:5px;
+    
+}
+
+section#accroche h2{
+    font-family:'Lobster Two', cursive;
+    font-size: 2em;
+    text-decoration: underline;
+    padding-bottom:10px;
+}
+
+section#accroche h2,section#accroche p{
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+/*****Produits*****/
+section#produits{
+    display: flex;
+    justify-content: space-around;
+}
+
+/** Ronds **/
+
+section#produits article{
+    border: 2px solid #c0aa94;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    background-color: azure;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/**Rotation complète**/
+
+section#produits article:hover{
+    
+        animation-name: rotation;
+        animation-duration: 2.5s;
+}
+
+@keyframes rotation{
+    0%{
+       
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        
+        transform: rotate(360deg);
+    }
+    
+    }
+
+
+
+/*****Contenu*****/
+
+section#contenu h2{
+     color: #c0aa94;
+     font-weight: bolder;
+     text-decoration: underline;
+     font-size: 1.5em;
+     font-family:'Lobster Two', cursive;
+}
+
+
+section#contenu figure{
+    display: flex;
+    align-items: center;
+    
+}
+
+section#contenu{
+    width: 85%;
+    margin: auto;
+}
+
+
+figure figcaption{
+    text-align: justify;
+    padding: 10px;
+    color: #c0aa94;
+}
+
+/*****Galerie photo*****/
+
+ul#galerie
+{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+    
+ul#galerie li img{
+    margin:5px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+    filter: grayscale(100%);
+}
+
+/*****Effet de survole*****/
+
+ul#galerie li img:hover{
+  background: #fff;
+  padding: 0.5rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  filter: none;
+} /***** Quand on survole on a un effet polaroid autour de la photo et celle-ci se colore****/
+
+
+/***** Footer*****/
+footer{
+    border: 1px solid #c0aa94;
+    padding: 20px;
+    background-color: rgb(201, 225, 233);
+    text-align: center;
+    margin-top: 70px;
+}
+
+/*****Espacement*****/
+
+section,ul#produits{
+    margin-top: 80px;
+  }
+
+section#contenu{
+    margin-top: 70px;
+}

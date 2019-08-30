@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+
+</head>
+<body>
+<h1>Positionnement</h1>
+
+<p>Différents types de position: normal , relative, absolue, fixe et sticky
+Relative: Relative par rapport au contenu, au flux du texte. On peut lui dire de monter ou de déplacer une portion du texte
+</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span style="color:red;position:relative;top:20px"> Labore quas magnam doloremque dolorum</span> voluptatum tempora nisi facere sequi.</p>
+
+<p>Absolu: Comme le relatif mais sort du flux </p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span style="color:blue;position: absolute;top:20px"> Labore quas magnam doloremque dolorum</span> voluptatum tempora nisi facere sequi.</p>
+
+<div style="position: relative"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span style="color:blue;position: absolute;top:20px"> Labore quas magnam doloremque dolorum</span> voluptatum tempora nisi facere sequi.</p></div>
+
+<p>Fix: même que absolu sauf que quand on scroll le texte ne bouge pas. Utiliser pour les boutons retour vers le haut</p>
+
+<p>Sticky: Mélange entre relative et fixe, de base il va être dans son flux tel quel et dès qu'on veut sortir le texte de l'écran il ne bougera pas.</p>
+
+<div>
+    <h1 style="position: sticky;top:20px">Yolo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quas magnam doloremque dolorum voluptatum tempora nisi facere sequi.</p>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+<h2>Les flexboxs</h2>
+<p>Permettent l'alignement verticales, la gestion de différent blocs
+Neccesite de créer une div qui va englober 2 articles (par ex)</p>
+
+<div style="display: flex">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum amet omnis ducimus velit ut magnam dicta cumque explicabo nihil, ea, aliquam ab expedita itaque nesciunt debitis consequuntur quae. Reprehenderit, aliquam?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat nulla labore reiciendis fuga necessitatibus quis laudantium magni numquam! Voluptatem suscipit doloremque laboriosam quod corrupti doloribus amet nostrum quidem cupiditate.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nihil voluptatibus iste dolores recusandae est odit deserunt ratione dicta soluta voluptas similique, animi, dolor hic vel, minus aspernatur maiores ab?</p>
+</div>
+
+<p>Tout les patagraphes sont les uns a cotés des autres et ils s'adaptent à la taille de l'écran (sur pc)</p>
+
+</body>
+</html>
